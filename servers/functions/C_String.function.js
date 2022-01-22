@@ -1,0 +1,36 @@
+
+exports.getSuccess = 'Get success!';
+exports.getFail = 'Get not success!';
+exports.notFound = 'Not Found!';
+exports.notSupport = 'Not Support!';
+exports.createSuccess = 'Create success!';
+exports.createFail = 'Create not success!';
+exports.updateSuccess = 'Update success!';
+exports.updateFail = 'Update not success!';
+exports.deleteSuccess = 'Delete success!';
+exports.deleteFail = 'Delete not success!';
+exports.noToken = 'No token provided!';
+exports.noMatch = 'Not Match userName and pass';
+exports.authenticateFail = 'Failed to authenticate token!';
+exports.accessFail = 'Failed to authenticate!';
+exports.accessSuccess = 'Success to authenticate!';
+
+exports.zalo = 'zalo';
+exports.face = 'facebook';
+exports.guest = 'web';
+exports.default_answer = '$default_answer';
+exports.text_card = 'text-card';
+exports.form_card = 'form-card';
+exports.info_card = 'info-card';
+exports.product_card = 'product-card';
+exports.go_to_card = 'go-to-card';
+exports.image_card = 'image-card';
+exports.memory_card = 'memory-card';
+exports.api_card = 'api-card';
+exports.support_card = 'support-card';
+exports.phone_card = 'phone-card';
+exports.email_card = 'email-card';
+exports.order_card = 'order-card';
+exports.admin_via_email_card = 'admin-via-email-card';
+exports.survey_card = 'survey-card';
+exports.not_found_item = 'Không có kết quả phù hợp với yêu cầu của bạn!';

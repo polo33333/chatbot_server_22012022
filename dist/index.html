@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI - CHATCARE</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+
+  <div id="chat_container_id"></div>
+    
+    <script>
+
+        let chatbox_data ={
+          __iconBot: '',
+          __baseUrl: 'https://692b-171-252-155-30.ngrok.io',
+          __token : '615e8077b78a67864c69aad7',
+          __botId : 'HU7HEPGJRBJ3L3KEFQGVNMDW3RX7HZID',
+          __title: 'Chat Box', // Values are subject to change
+          __sayHello: 'Xin chào', // Values are subject to change
+        };
+
+        let fontAwesome_stylesheet = document.createElement('link');
+        fontAwesome_stylesheet.id = 'fontAwesome_script';
+        fontAwesome_stylesheet.rel = 'stylesheet';
+        fontAwesome_stylesheet.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+        document.body.appendChild(fontAwesome_stylesheet);
+
+        let chatbox_stylesheet = document.createElement('link');
+        chatbox_stylesheet.id = 'chatbox_script';
+        chatbox_stylesheet.rel = 'stylesheet';
+        chatbox_stylesheet.href = chatbox_data.__baseUrl + '/static/css/chatbox.css';
+        document.body.appendChild(chatbox_stylesheet);
+
+
+        let chatbox_script = document.createElement('script');
+        chatbox_script.id = 'chatbox_script';
+        chatbox_script.src = chatbox_data.__baseUrl + '/static/js/chatbox.js';
+        document.body.appendChild(chatbox_script);
+
+        chatbox_script.onload = function () {
+            render_chatbox(chatbox_data);
+        }
+    </script>
+<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+</html>
+
+
